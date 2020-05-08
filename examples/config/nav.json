@@ -1,0 +1,98 @@
+{
+  "开发指南": [
+    {
+      "name": "giud",
+      "path": "/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "快速开始"
+    },
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    },
+    {
+      "name": "home",
+      "path": "/home",
+      "type": "pages"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "font 字体",
+          "name": "font",
+          "path": "/font"
+        },
+        {
+          "desc": "color 颜色",
+          "name": "color",
+          "path": "/color"
+        },
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/button"
+        },
+        {
+          "desc": "Header 头",
+          "name": "header",
+          "path": "/header"
+        },
+        {
+          "desc": "Footer 尾",
+          "name": "footer",
+          "path": "/footer"
+        },
+        {
+          "desc": "NavMenu 左侧导航",
+          "name": "navMenu",
+          "path": "/navMenu"
+        },
+        {
+          "desc": "Table 表格",
+          "name": "table",
+          "path": "/table"
+        }
+      ]
+    },
+    {
+      "desc": "视图组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Dialog 弹框",
+          "name": "dialog",
+          "path": "/dialog"
+        },
+        {
+          "desc": "Alert 警告",
+          "name": "alert",
+          "path": "/alert"
+        },
+        {
+          "desc": "Cart 卡片",
+          "name": "cart",
+          "path": "/cart"
+        },
+        {
+          "desc": "Page 分页",
+          "name": "page",
+          "path": "/page"
+        }
+      ]
+    }
+  ]
+}

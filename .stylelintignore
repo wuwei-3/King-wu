@@ -1,0 +1,2 @@
+//这进而的配置是在编译时过滤掉不验证的目录或文件 
+src/styles/modules/hover.css 

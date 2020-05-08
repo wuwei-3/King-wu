@@ -1,0 +1,84 @@
+{
+  "name": "biims-ui",
+  "version": "0.1.0",
+  "description": "国家大项目线，前端公共组件UI库",
+  "author": "wuwei3",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lib": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lint:staged": "lint-staged",
+    "build": "vue-cli-service build --target dist --name bi-ui --dest dist packages/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{jsx,txs,ts,js,vue}": [
+      "eslint --fix",
+      "stylelint --config  ./.stylelintrc --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "html-loader": "^1.1.0",
+    "markdown-it": "^10.0.0",
+    "markdown-loader": "^5.1.0",
+    "showdown": "^1.9.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.2.0",
+    "@vue/cli-plugin-eslint": "^4.2.0",
+    "@vue/cli-plugin-router": "^4.2.0",
+    "@vue/cli-plugin-unit-jest": "^4.2.0",
+    "@vue/cli-plugin-vuex": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "markdown-it-anchor": "^5.2.7",
+    "markdown-it-container": "^2.0.0",
+    "node-sass": "^4.13.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
